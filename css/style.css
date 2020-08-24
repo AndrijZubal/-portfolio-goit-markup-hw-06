@@ -107,8 +107,12 @@ li.menu-list {
   text-decoration: none;
 }
 
-.menu-item:hover,
-.menu-item:focus,
+.portfolio {
+  color: var(--accent-color);
+}
+
+.menu-item:hover:not(.portfolio),
+.menu-item:focus:not(.portfolio),
 .contact-item:hover,
 .contact-item:focus,
 .address-contact:hover,
@@ -153,7 +157,7 @@ li.menu-list {
 }
 
 .contact-item,
-.menu-item,
+.menu-item:not(.portfolio),
 .menu-link {
   font-weight: 500;
   font-size: 14px;
